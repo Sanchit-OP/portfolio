@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Insta from '../images/insta.png';
-import Linkd from '../images/Linkd.png';
+import Linkd from './../images/Linkd.png';
 
 
 
