@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --primary-glow: conic-gradient(
+    from 180deg at 50% 50%,
+    #16abff33 0deg,
+    #0885ff33 55deg,
+    #54d6ff33 120deg,
+    #0071ff33 160deg,
+    transparent 360deg
+  );
+  --secondary-glow: radial-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+
+  --tile-start-rgb: 239, 245, 249;
+  --tile-end-rgb: 228, 232, 233;
+  --tile-border: conic-gradient(
+    #00000080,
+    #00000040,
+    #00000030,
+    #00000020,
+    #00000010,
+    #00000010,
+    #00000080
+  );
+
+  --callout-rgb: 238, 240, 241;
+  --callout-border-rgb: 172, 175, 176;
+  --card-rgb: 180, 185, 188;
+  --card-border-rgb: 131, 134, 135;
+}
+body{
+  background-color:#282722;
+}
+.pink{
+  color:#f7e8f7;
+}
+
+@layer components{
+  .shadow10{
+    text-decoration: none;
+    text-shadow: 
+    0 0 10px #07c9af ,
+    0 0 20px #07c9af ,
+    0 0 50px #07c9af ,
+    0 0 10px #07c9af  ;
+  }
+  .shadow1{
+    text-decoration: none;
+    text-shadow: 
+    0 0 1px #df2935 ,
+    0 0 5px #df2935 ,
+    0 0 20px #df2935 ,
+    0 0 50px #df2935  ;
+  }
+}
+.box1{
+  box-shadow: 0 0 50px 15px #07c9af;
+  transition: 3s fade in;
+}
+.box2{
+  box-shadow: 0 0 50px 15px #df2935;
+  transition: 3s fade in;
+}
+
+.ani1{
+  top:5%;
+  left:35%;
+  animation: animate 5s linear infinite;
+  position: relative;
+}
+.ani2{
+  top:-5%;
+  left:0%;
+  animation: animate 8s linear infinite;
+  position: relative;
+}
+.ani3{
+  top:12%;
+  left:32%;
+  animation: animate 7s linear infinite;
+  position: relative;
+}
+.ani4{
+  top:0%;
+  left:45%;
+  animation: animate 9s linear infinite;
+  position: relative;
+}
+.ani5{
+  top:70%;
+  left:-15%;
+  animation: animate 9s linear infinite;
+  position: relative;
+}
+.ani6{
+  top:65%;
+  left:-50%;
+  animation: animate 6s linear infinite;
+  position: relative;
+}
+.ani7{
+  top:65%;
+  left:12%;
+  animation: animate 5s linear infinite;
+  position: relative;
+}
+.ani8{
+  top:76%;
+  left:-22%;
+  animation: animate 6s linear infinite;
+  position: relative;
+}
+@keyframes animate{
+  0%{
+    transform: scale(0.9) translateY(0);
+  }
+  50%{
+    transform: scale(1) translateY(-100px);
+  }
+  100%{
+    transform: scale(0.9) translateY(0);
+  }
+}
